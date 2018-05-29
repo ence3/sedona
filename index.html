@@ -2,27 +2,28 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link href="css/normalize.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=0">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
   <title>Sedona</title>
 </head>
 <body>
 <header class="page-header">
-  <nav class="main-nav">
-    <button class="main-nav__toggle  main-nav__toggle--opened" type="button">Открыть меню</button>
+  <nav class="main-nav main-nav--closed">
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item  site-list__item--active"><a><img class="site-list__logo" src="" alt="" width="" height=""></a></li>
         <li class="site-list__item  site-list__item--close"><a href="#">Главная</a></li>
-        <button class="main-nav__toggle  main-nav__toggle--closed" type="button">Закрыть меню</button>
         <li class="site-list__item"><a href="#">Фото и видео</a></li>
         <li class="site-list__item"><a href="#">Форма отзыва</a></li>
         <li class="site-list__item"><a href="#">HTML Academy</a></li>
+        <li class="site-list__item  site-list__item--active"><a><img class="site-list__logo" src="img/logotyle-mobile.png" alt="logo-menu" width="102" height="83"></a></li>
       </ul>
     </div>
   </nav>
-  <div class="page-header__logo" src="" alt="" width="" height="">
-    <img class="main__logo" src="" alt="main-logo" width="" height="">
+  <div class="page-header__logo">
+    <img class="main__logo" src="img/intro-triangle.png" alt="main-logo" width="320" height="389">
   </div>
 </header>
 <main class="page-main">
