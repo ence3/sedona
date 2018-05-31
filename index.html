@@ -10,11 +10,11 @@
 </head>
 <body>
 <header class="page-header">
-  <nav class="main-nav main-nav--closed">
+  <nav class="main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item  site-list__item--close"><a href="#">Главная</a></li>
+        <li class="site-list__item  site-list__item--close"><a>Главная</a></li>
         <li class="site-list__item  site-list__item-btn"><span class="visually-hidden">Закрыть меню</span></li>
         <li class="site-list__item"><a href="#">Фото и видео</a></li>
         <li class="site-list__item"><a href="#">Форма отзыва</a></li>
@@ -34,7 +34,7 @@
   </section>
   <section class="feature-one">
     <div class="feature-one__promo">
-      <img class="feature-one__image" src="img/whitecopy.png" alt="border" width="320" height="37">
+      <img class="feature-one__image" src="img/whitecopy.png" alt="border" width="320" height="auto">
       <h3 class="feature-one__caption">Настоящий городок</h3>
       <p class="feature-one__number">&#8211 №1 &#8211</p>
       <p class="feature-one__intro">Седона - не аттракцион для туристов, там течет своя жизнь</p>
@@ -74,17 +74,19 @@
       <li class="features__item">
         <h3 class="features__item-title">Небольшая площадь</h3>
         <p class="features__item-number">&#8211 №3 &#8211</p>
-        <p class="features__item-intro">Все достопримечательности находятся очень близко</p>
+        <p class="features__item-intro">Все интересные места находятся очень близко</p>
+        <p class=features__item-border></p>
       </li>
       <li class="features__item">
         <h3 class="features__item-title">Красивая дорога</h3>
         <p class="features__item-number">&#8211 №4 &#8211</p>
         <p class="features__item-intro">Ехать в Седону из Лас-Вегаса <br> совсем не скучно</p>
+        <p class=features__item-border></p>
       </li>
       <li class="features__item">
         <h3 class="features__item-title">Мало туристов</h3>
         <p class="features__item-number">&#8211 №5 &#8211</p>
-        <p class="features__item-intro">Большинство едет в Гранд Каньон &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; и толпится там</p>
+        <p class="features__item-intro">Большинство едет в Гранд Каньон и толпится там</p>
       </li>
     </ul>
   </section>
@@ -93,7 +95,7 @@
     <p class="contact__intro">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     <a class="contact__find  btn" href="#">Найти гостиницу</a>
     <div class="contact__map">
-      <img src="" width=" " height=" " alt=" ">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d835562.9403956579!2d-111.9958695!3d35.108765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+Arizona+86336%2C+%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1527750219600" width="320" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </section>
 </main>
@@ -116,10 +118,10 @@
       </ul>
     </div>
     <div class="page-footer__copyright">
-      <b class="copyright__text">Разработано</b>
-        <a class="button copyright-link" href="#"><img class="copyright-image" src="" alt="HTML Logo" width="" heght=""> HTML Academy</a>
+      <p class="copyright__text">Разработано <a class="copyright-link" href="#"><img class="copyright-image" src="img/htmlacademy.svg.png" alt="HTML Logo" width="27" heght="34"> HTML Academy</a></p>
     </div>
   </div>
 </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
