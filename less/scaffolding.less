@@ -1,5 +1,5 @@
 body {
-  width: 320px;
+  min-width: 320px;
   padding: 0;
   margin: 0 auto;
   font-family: @base-font;
@@ -12,8 +12,8 @@ body {
 
 
 img {
+  width: 100%;
   max-width: 100%;
-  height: auto;
 }
 
 .visually-hidden {
@@ -31,11 +31,11 @@ img {
 
 @media (min-width: @desktop-width) {
   body {
- /*   background-color: rgb(239, 239, 239); */
+    background-color: rgb(239, 239, 239); 
   }
 
   .page-border {
-    width: 1120px;
+    width: 1200px;
     margin: auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }

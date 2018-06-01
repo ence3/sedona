@@ -9,22 +9,39 @@
   <title>Sedona</title>
 </head>
 <body>
+<div class="page-border">
 <header class="page-header">
   <nav class="main-nav main-nav--closed main-nav--nojs">
     <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
-        <li class="site-list__item  site-list__item--close"><a>Главная</a></li>
-        <li class="site-list__item  site-list__item-btn"><span class="visually-hidden">Закрыть меню</span></li>
-        <li class="site-list__item"><a href="#">Фото и видео</a></li>
-        <li class="site-list__item"><a href="#">Форма отзыва</a></li>
-        <li class="site-list__item"><a href="#">HTML Academy</a></li>
-        <li class="site-list__item  site-list__item--active"><a><img class="site-list__logo" src="img/logotyle-mobile.png" alt="logo-menu" width="102" height="83"></a></li>
+        <li class="site-list__item  site-list__item--close">
+          <a>Главная</a>
+        </li>
+        <li class="site-list__item  site-list__item-btn">
+          <span class="visually-hidden">Закрыть меню</span>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Фото и видео</a></li>
+        <li class="site-list__item">
+          <a href="#">Форма отзыва</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML Academy</a>
+        </li>
+        <li class="site-list__item  site-list__item--active">
+          <a>
+            <picture> 
+              <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+              <img class="site-list__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+            </picture>
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
   <div class="page-header__logo">
-    <img class="main__logo" src="img/intro-triangle.png" alt="main-logo" width="320" height="auto">
+    <img class="page-header__logo-img" src="img/text-sedona-index.svg" width="280" height="215" alt="Welcome to The Sedona">
   </div>
 </header>
 <main class="page-main">
@@ -34,13 +51,15 @@
   </section>
   <section class="feature-one">
     <div class="feature-one__promo">
-      <img class="feature-one__image" src="img/whitecopy.png" alt="border" width="320" height="auto">
       <h3 class="feature-one__caption">Настоящий городок</h3>
       <p class="feature-one__number">&#8211 №1 &#8211</p>
       <p class="feature-one__intro">Седона - не аттракцион для туристов, там течет своя жизнь</p>
     </div>
-    <div class="feature__image">
-      <img class="feature__image-city" src="img/photo-city@1x.png" width="320" height="260" alt="city">
+    <div class="feature-one__pic">
+      <picture>
+        <source media="(min-width:375px)" srcset="img/main-city-mobile@2x.jpg" width=auto>
+        <img src="img/main-city-mobile@1x.jpg" >
+      </picture>
     </div>
   </section>
   <section class="advantages">
@@ -66,7 +85,10 @@
       <p class="feature-two__intro">Да, по нему можно пройти! Если вы осмелитись, конечно</p>
     </div>
     <div class="features__image">
-      <img class="features__image-devil" src="img/photo-bridge@1x.png" width="320" height="260" alt="bridge">
+      <picture>
+        <source media="(min-width:375px)" srcset="img/main-bridge-mobile@2x.jpg">
+        <img src="img/main-bridge-mobile@1x.jpg">
+      </picture>
     </div>
   </section>
   <section class="features">
@@ -95,7 +117,7 @@
     <p class="contact__intro">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
     <a class="contact__find  btn" href="#">Найти гостиницу</a>
     <div class="contact__map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d835562.9403956579!2d-111.9958695!3d35.108765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+Arizona+86336%2C+%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1527750219600" width="320" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <iframe class="contact__map-google"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d835562.9403956579!2d-111.9958695!3d35.108765!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+Arizona+86336%2C+%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1527750219600" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </section>
 </main>
@@ -118,10 +140,11 @@
       </ul>
     </div>
     <div class="page-footer__copyright">
-      <p class="copyright__text">Разработано <a class="copyright-link" href="#"><img class="copyright-image" src="img/htmlacademy.svg.png" alt="HTML Logo" width="27" heght="34"> HTML Academy</a></p>
+      <p class="copyright__text">Разработано <a class="copyright-link" href="#"><img class="copyright-image" src="img/htmla.png" alt="HTML Logo" width="27" heght="34"> HTML Academy</a></p>
     </div>
   </div>
 </footer>
+</div>
   <script src="js/script.js"></script>
 </body>
 </html>

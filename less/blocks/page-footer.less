@@ -24,19 +24,24 @@
 }
 
 .page-footer__social {
+	text-align: center;
 	margin-top: 35px;
-	margin-left: 85px;
-	position: absolute;
 }
 
 .social__item {
 	display: inline-block;
-	position: relative;
 	vertical-align: top;
 	width: 46px;
 	height: 48px;
 	background-color: #81b3d2;
 	margin-right: 7px;
+	position: relative;
+	&:hover {
+		background-color: #669ec0;
+	};
+	&:active {
+		background-color: #5496bd;
+	};
 }
 
 .social-link--twitter:before {
@@ -80,20 +85,22 @@
 
 .page-footer__copyright {
 	margin: 0;
-	margin-top: 125px;
+	margin-top: 40px;
+	text-align: center;
 }
 
 .copyright__text {
 	font-size: 14px;
 	line-height: 26px;
 	text-transform: uppercase;
-	padding-left: 95px;
-	position: relative;
 }
 
 .copyright-link {
-	position: absolute;
 	font-size: 0;
 	top: 0;
-	right: 96px;
+}
+
+.copyright-link img {
+	width: 27px;
+	height: 34px;
 }
