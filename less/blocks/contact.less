@@ -45,7 +45,6 @@
 	};
 }
 
-
 .contact__map {
 	padding: 0;
 	margin: 0 auto;
@@ -54,6 +53,48 @@
 }
 
 .contact__map-google {
+	min-height: 350px;
 	min-width: 320px;
 	margin: 0 auto;
+}
+
+@media (min-width: @desktop-width) {
+	.contact {
+		min-height: 332px;
+		padding: 0;
+		margin: 0;
+	}
+	.contact__map-google {
+		min-width: 0x;
+		margin: 0 auto;
+	}
+
+	.contact__caption {
+		font-size: 30px;
+		padding-top: 50px;
+		padding-right: 31px;
+		padding-left: 31px;
+	}
+	.contact__intro {
+		padding-top: 5px;
+		padding-left: 400px;
+		padding-right: 400px;
+		margin-bottom: 30px;
+	}
+
+	.btn {
+		display: inline-block;
+		padding: 15px 137px;
+		padding-bottom: 17px;
+	}
+
+	.contact__map {
+		padding: 0;
+		margin: 0 auto;
+		margin-top: 50px;
+		margin-bottom: 25px;
+		background-image: url(../img/map-desktop.jpg);
+		background-repeat: no-repeat;
+	}
+
 }

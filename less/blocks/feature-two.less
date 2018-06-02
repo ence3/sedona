@@ -40,4 +40,43 @@
 	text-align: center;
 }
 
-
+@media (min-width: @desktop-width) {
+	.feature-two {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+	.feature-two__promo {
+		margin: 0 auto;
+		padding: 0;
+		background-color: #81b3d2;
+		color: #fff;
+		min-width: 400px;
+		height: 256px;
+		background-size: 100%;
+	}
+	.feature-two__pic img {
+		min-width: 800px;
+		height: 256px;
+	}
+	.feature-two__caption {
+		padding:0;
+		padding-top: 56px;
+		padding-left: 126px;
+		padding-right: 126px;
+		margin: 0;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.feature-two__intro {
+		margin: 0;
+		padding: 0;
+		text-transform: uppercase;
+		padding-top: 16px;
+		padding-left: 85px;
+		padding-right: 85px;
+		text-align: center;
+	}
+}

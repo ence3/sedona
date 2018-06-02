@@ -1,7 +1,10 @@
 .features {
 	padding: 0;
 	margin: 0;
-	height: 502px;
+}
+
+.features__item {
+	min-height: 168px;
 }
 
 .features__list {
@@ -48,4 +51,37 @@
 	margin-left: 20px;
 	margin-right: 20px;
 	border-bottom: 1px solid #d6d6d6;
+}
+
+@media (min-width: @desktop-width) {
+	.features {
+		padding: 0;
+		margin: 0;
+		min-height: 255px;
+	}
+	.features__list {
+		display: flex;
+	}
+	.features__item {
+		width: 400px;
+		min-height: 270px;
+	}
+	.features__item-border {
+		border: none;
+	}
+	.features__item-title {
+		font-size: 20px;
+		padding-top: 55px;
+		padding-left: 140px;
+		padding-right: 143px;
+	}
+	.features__item-number {
+		padding-top: 10px;
+	}
+	.features__item-intro {
+		padding-left: 40px;
+		padding-right: 40px;
+		text-align: center;
+		padding-top: 15px;
+	}
 }
